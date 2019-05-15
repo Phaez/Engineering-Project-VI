@@ -1,0 +1,47 @@
+
+body{
+    font-family: Georgia, serif;
+}
+p {
+    text-indent: 15px;
+    font-size: 100%;
+    line-height: 20px;
+    text-align: justify;
+}
+ul {
+    list-style-type: square;
+}
+ol {
+    list-style-type: lower-roman;
+}
+li {
+    text-align: justify;
+}
+h1 {
+    font-size: 160%
+}
+h2 {
+    font-size: 125%;
+}
+figure {
+    text-align: center;
+}
+figcaption{
+    font-style: italic;
+    text-decoration: underline;
+}
+img {
+    height: 300px;
+}
+.underline {
+    text-decoration: underline;
+}
+.bold {
+    font-weight: bold;
+}
+#under {
+    text-decoration: underline;
+}
+#boldtext {
+    font-weight: bold;
+}

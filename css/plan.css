@@ -1,0 +1,13 @@
+table {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border-spacing: 3px;
+    border: 1px solid #dddddd;
+    padding: 3px;
+}
+td:hover, th:hover{
+    background-color: rgb(156, 156, 156);
+}
