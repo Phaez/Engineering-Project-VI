@@ -8,6 +8,12 @@ p {
     line-height: 20px;
     text-align: justify;
 }
+ul {
+    list-style-type: square;
+}
+ol {
+    list-style-type: lower-roman;
+}
 li {
     text-align: justify;
 }
