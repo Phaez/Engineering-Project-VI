@@ -23,3 +23,15 @@ figcaption{
 img {
     height: 300px;
 }
+.underline {
+    text-decoration: underline;
+}
+.bold {
+    font-weight: bold;
+}
+#under {
+    text-decoration: underline;
+}
+#boldtext {
+    font-weight: bold;
+}
