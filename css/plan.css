@@ -9,5 +9,5 @@ td, th {
     padding: 3px;
 }
 td:hover, th:hover{
-    background-color: gray;
+    background-color: rgb(156, 156, 156);
 }
