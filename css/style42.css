@@ -1,0 +1,56 @@
+body {
+    background-color: #333;
+    color: #fff;
+}
+#drop {
+    color: white;
+}
+#drop:hover {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+}
+#drop-item {
+    color: black;
+    text-decoration: none;
+    padding: 14px 16px;
+
+}   
+#drop-item:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+#nav-button {
+    color: white;
+}
+#nav-button:hover {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+}
+#login-btn {
+    text-decoration: none;
+    color: green;
+}
+
+#main-body {
+    margin-top: 100px;
+}
+
+.main-photo {
+    border-radius: 30px;
+}
+.dropdown-menu {
+    min-width: 500px !important;
+}
+.logindropdown {
+    background-color: #333;
+}
+#logindrop {
+    background-color: #333;
+}
+.dropdown-in {
+    color: #fff;
+
+}
