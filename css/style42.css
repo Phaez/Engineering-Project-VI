@@ -1,4 +1,6 @@
 body {
+    font-family: Georgia, serif;
+    padding-top: 65px;
     background-color: #333;
     color: #fff;
 }
@@ -21,6 +23,11 @@ body {
     color: #fff;
 }
 
+#logindropdown:hover {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+}
 #nav-button {
     color: white;
 }
@@ -45,12 +52,20 @@ body {
     min-width: 500px !important;
 }
 .logindropdown {
-    background-color: #333;
+    color: white;
 }
 #logindrop {
     background-color: #333;
+    color: white;
 }
 .dropdown-in {
     color: #fff;
 
+}
+
+#logbookbody {
+    padding-left: 60px;
+}
+#rememberme {
+    padding-left: 60px;
 }

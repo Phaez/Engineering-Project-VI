@@ -2,67 +2,92 @@
 <html>
     <head>
         <title>Project Plan</title>
-        <link href="css/logbook.css" type="text/css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="robot" content="">
+
+        <!-- Custom styles for this template -->
+        <link href="css/jumbotron.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
+        <link href="css/style42.css" rel="stylesheet">
+
     </head>
 
     <body>
-        <div class="navbar">
-                <a href="index.html">About</a>
-    
-                <div class="dropdown">
-                    <button class="dropbtn">Logbooks</button>
-                    <div class="dropdown-content">
-                        <a href="williamlogbook.html">William's Logbook</a>
-                        <a href="TudorLogbook.html">Tudor's Logbook</a>
-                        <a href="HaronLogbook.html">Haron's Logbook</a>
+            <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <a class="navbar-brand" href="#">Project VI</a>
+                  
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" id="nav-button" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Logbooks</a>
+                                <div class="dropdown-menu" aria-labelledby="drop">
+                                    <a class="dropdown-item" id="drop-item" href="TudorLogbook.html">Tudor's Logbook</a>
+                                    <a class="dropdown-item" id="drop-item" href="williamlogbook.html">William's Logbook</a>
+                                    <a class="dropdown-item" id="drop-item" href="HaronLogbook.html">Haron's Logbook</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-button" href="projectdetails.html">Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-button" href="Plan.html" >Plan</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown">Login</a>
+                                    <div class="dropdown-menu dropdown-menu-right" id="logindrop">
+                                        <form class="px-4 py-3">
+                                            <div class="form-group">
+                                            <label for="exampleDropdownFormEmail1" class="dropdown-in">Email address</label>
+                                            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                            </div>
+                                            <div class="form-group">
+                                            <label for="exampleDropdownFormPassword1" class="dropdown-in">Password</label>
+                                            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                            </div>
+                                            <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                            <label class="form-check-label dropdown-in rememberme" for="dropdownCheck">
+                                                Remember me
+                                            </label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary dropdown-in">Sign in</button>
+                                        </form>
+                                        <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item dropdown-in" href="#">Request Acccess</a>
+                                    <a class="dropdown-item dropdown-in" href="#">Forgot password?</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                
-                <a href="login.html">Login</a>
-                <a href="Plan.html">Plan</a>
-            </div>
+                </nav>
         <h1>
             Project Plan
         </h1>
-        <ol>
-            <li>Design Can Messaging</li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <img class="img-fluid" src="images/ProjectPlan.jpg" alt="Plan">
 
-        </ol>
-        <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Week 1</th>
-                        <th>Week 2</th>
-                        <th>Week 3</th>
-                        <th>...</th>
-                    </tr>
-                    
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Task 1</th>
-                        <td></td>
-                        <td>TM</td>
-                        <td>TM</td>
-                    </tr>
-                    <tr>
-                        <th>Task 2</th>
-                        <td>LC</td>
-                        <td>LC</td>
-                        <td>LC</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th colspan="10">LC = Larry Caps TM = Tudor Marienescu</th>
-                    </tr>
-                </tfoot>
-        </table>
-        <a href=index.html>Return</a>
+                            <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
     </body>
 </html>
