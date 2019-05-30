@@ -1,26 +1,35 @@
 body {
     font-family: Georgia, serif;
-    padding-top: 65px;
     background-color: #333;
     color: #fff;
+    padding-top: 60px;
 }
 #drop {
     color: white;
+    transition: 0.4s;
+    transition-timing-function: ease-out;
 }
 #drop:hover {
     background-color: #fff;
     color: #333;
     border-radius: 5px;
+    transition: 0.15s;
+}
+#drop:active {
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px;
 }
 #drop-item {
     color: black;
     text-decoration: none;
     padding: 14px 16px;
+    transition: 0.2s;
 
 }   
 #drop-item:hover {
     background-color: #333;
     color: #fff;
+    transition: 0.2s;
 }
 
 #logindropdown:hover {
@@ -30,11 +39,14 @@ body {
 }
 #nav-button {
     color: white;
+    transition: 0.4s;
+    transition-timing-function: ease-out;
 }
 #nav-button:hover {
     background-color: #fff;
     color: #333;
     border-radius: 5px;
+    transition: 0.15s;
 }
 #login-btn {
     text-decoration: none;
@@ -49,7 +61,10 @@ body {
     border-radius: 30px;
 }
 .dropdown-menu {
-    min-width: 500px !important;
+    min-width: 150px;
+}
+.dropdownlogin {
+    min-width: 400px;
 }
 .logindropdown {
     color: white;
@@ -66,6 +81,18 @@ body {
 #logbookbody {
     padding-left: 60px;
 }
-#rememberme {
-    padding-left: 60px;
+.rememberme {
+    position: relative;
+    left: 15px;
+}
+.dropper {
+    transition: 0.4s;
+    transition-timing-function: ease-out;
+}
+.dropper:hover {
+    background-color: #fff;
+    border-radius: 5px;
+    color: #333 !important;
+    transition: 0.15s;
+
 }
