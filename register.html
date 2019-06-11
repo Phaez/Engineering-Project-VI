@@ -3,9 +3,10 @@
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <meta name="robot" content="">
+        <meta name="description" content="registering page">
+        <meta name="robot" content="noindex nofollow">
+        <meta http-equiv="author" content="William Davidson">
+        <meta http-equiv="pragma" content="no-cache">
 
         <!-- Custom styles for this template -->
         <link href="css/jumbotron.css" rel="stylesheet">
@@ -18,24 +19,28 @@
 </head>
 
 <body>
-    <form action="requestaccess.php" id="request" method="POST">
+    <form id="request" action="requestaccess.php"  method="POST">
         <fieldset class="offset-md-1 field">
             <legend class="leg">Request Access</legend>
             <div class="form-group">
                 <label for="first_name">First Name:</label>
                 <input type="text" class="form-control" id="first_name" name="firstname" placeholder="Enter First Name">
+                <p id="firstNameFeedback"></p>
             </div>
             <div class="form-group">
                 <label for="last_name">Last Name:</label>
                 <input type="text" class="form-control" id="last_name" name="lastname" placeholder="Enter Last Name">
+                <p id="lastNameFeedback"></p>
             </div>
             <div class="form-group">
                     <label for="email_address">Email:</label>
                     <input type="email" class="form-control" id="email_address" name="email" placeholder="Enter Email">
+                    <p id="emailFeedback"></p>
             </div>
             <div class="form-group">
                     <label for="website_input">Website:</label>
-                    <input type="url" class="form-control" id="website_input" name="website" placeholder="Enter Website URL">
+                    <input type="text" class="form-control" id="website_input" name="website" placeholder="Enter Website URL">
+                    <p id="websiteFeedback"></p>
             </div>
             <div class="form-group">
                     <label for="birth">Birth date:</label>
@@ -72,10 +77,12 @@
             
             <div class="form-group">
                 <label for="text">Additional Thoughts</label>
-                <textarea class="form-control" id="text" rows="4" form="request"></textarea>
+                <textarea class="form-control" id="message" rows="4" form="request"></textarea>
+                <p id="charactersLeft"></p>
+                <p id="lastkey"></p>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
             </div>
 
         </fieldset>
@@ -94,6 +101,8 @@
     
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="js/register.js"></script>
 
     <footer>Copywrite &copy William Davidson</footer>
 

@@ -8,6 +8,10 @@ td, th {
     border: 1px solid #dddddd;
     padding: 3px;
 }
+
+th {
+    max-width: 200px;
+}
 td:hover, th:hover{
     background-color: rgb(156, 156, 156);
 }
