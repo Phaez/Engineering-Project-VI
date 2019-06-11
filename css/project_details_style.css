@@ -1,6 +1,7 @@
 
 body{
     font-family: Georgia, serif;
+
 }
 p {
     text-indent: 15px;
@@ -44,4 +45,25 @@ img {
 }
 #boldtext {
     font-weight: bold;
+}
+
+.contents {
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    width: 950px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+}
+figure {
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+img {
+    box-shadow: 10px 10px 5px gray;    
 }

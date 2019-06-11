@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Login Page</title>
-        <link href="css/logbook.css" type="text/css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="navbar">
-                <a href="index.html">About</a>
-    
-                <div class="dropdown">
-                    <button class="dropbtn">Logbooks</button>
-                    <div class="dropdown-content">
-                        <a href="williamlogbook.html">William's Logbook</a>
-                        <a href="TudorLogbook.html">Tudor's Logbook</a>
-                        <a href="HaronLogbook.html">Haron's Logbook</a>
-                    </div>
-                </div>
-                
-                <a href="login.html">Login</a>
-                <a href="Plan.html">Plan</a>
-            </div>
-        <h1>
-            Login:
-        </h1>
-        <p>Username: <input type = "text" name="username" required></p>
-        <p>
-            Password: <input type="password" name="password" required>
-        </p>
-        <input type ="submit" value="Login"/>
-        <p><a href="request_access.html">Request Access</a></p>
-        <p><a href="index.html">Return</a></p>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="robot" content="">
 
-    </body>
+        <!-- Custom styles for this template -->
+        <link href="css/jumbotron.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
+        <link href="css/style42.css" rel="stylesheet">
+        <link href="css/register.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <form action="requestaccess.php" id="request" method="POST">
+        <fieldset class="offset-md-1 field">
+            <legend class="leg">Login</legend>
+            <div class="form-group">
+                <label for="Username">Username:</label>
+                <input type="text" class="form-control" id="Username" name="username" placeholder="Enter Username">
+                <p id="user_err"></p>
+            </div>
+            <div class="form-group">
+                <label for="Password">Password:</label>
+                <input type="password" class="form-control" id="Password" name="password" placeholder="Enter password">
+                <p id="pass_err"></p>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a href="register.php" class="btn btn-primary req">Request Access</a>
+            </div>
+
+        </fieldset>
+    </form>
+
+
+
+    
+                            <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="js/login.js"></script>
+
+    <footer>Copywrite &copy William Davidson</footer>
+
+</body>
 </html>

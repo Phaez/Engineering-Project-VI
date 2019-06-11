@@ -1,0 +1,33 @@
+body {
+    padding-top: 65px;
+}
+
+.form-group {
+    width: 500px;
+    padding: 10px;
+}
+
+.field {
+    width: 60%;
+    border-style: solid;
+    border-color: 0x333;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+.leg {
+    width: auto;
+    padding: 5px;
+    border-color: 0x333;
+}
+.radio {
+    padding-right:10px;
+}
+
+.req:hover {
+    background-color: rgb(3, 3, 189);
+}
+
+.req:active {
+    background-color: darkblue;
+}

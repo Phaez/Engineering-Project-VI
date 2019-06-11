@@ -14,11 +14,12 @@
         <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
         <link href="css/style42.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <link href="css/projectdetails.css" type="text/css" rel="stylesheet" />
+        <link href="css/project_details_style.css" type="text/css" rel="stylesheet" />
     
     </head>
 
     <body>
+        <div class="contents">
         <h1>Project Details</h1>
         <h2>Project Description</h2>
         <p>
@@ -47,7 +48,7 @@
         <p>
                 The distance sensor will be interfaced directly to the controller to provide a distance estimate, which can be displayed on an LCD or 7-segment LED display and ultimately used for positional feedback. The elevator <span class="bold">motor</span> will interface with the controller via servo electronics.
         </p>
-        <figure>
+        <figure class="image">
             <img src="images/fig1.jpg" alt="schematic" title="Schematic">
             <figcaption>
                     Figure-1 <br>
@@ -67,7 +68,7 @@
             <li><span class="bold">A data server</span> which will monitor and store data from the controller/CAN network, and</li>
             <li><span class="bold">A diagnostics display program </span> that will collect and display this data on the elevator module or at any other PC connected by a LAN interface to the elevator module. An aspect of elevator control (such as shutting the elevator down completely, or requesting the elevator via a phone app rather than the floor button) will be included. Finally, in Phase 2, software will be developed to retrieve elevator status information from the elevator module, over an Internet connection. </li>
         </ol>
-        <figure>
+        <figure class="image">
             <img src="images/fig2.jpg" alt="can network" title="Can schematic">
             <figcaption>
                 Figure-2<br>
@@ -102,7 +103,7 @@
                 </tr>
             </tbody>
         </table>
-        
+        </div>
         <footer>Copywrite &copy William Davidson</footer>
 
                             <!-- Bootstrap core JavaScript
