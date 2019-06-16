@@ -85,14 +85,3 @@ body {
     position: relative;
     left: 15px;
 }
-.dropper {
-    transition: 0.4s;
-    transition-timing-function: ease-out;
-}
-.dropper:hover {
-    background-color: #fff;
-    border-radius: 5px;
-    color: #333 !important;
-    transition: 0.15s;
-
-}
