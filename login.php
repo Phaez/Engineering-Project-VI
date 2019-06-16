@@ -1,7 +1,5 @@
 <?php
     require "nav.html";
-    require "register.html";
-
-
+    require "login.html";
 
 ?>
