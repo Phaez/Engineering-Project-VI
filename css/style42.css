@@ -85,3 +85,6 @@ body {
     position: relative;
     left: 15px;
 }
+.logbookentry {
+    font-size: 16px;
+}
