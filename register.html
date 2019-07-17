@@ -19,85 +19,52 @@
 </head>
 
 <body>
+    <div class="bg">
+        <div class="mainelevator">
+    <div id="nav-placeholder"></div>
+
     <form id="request" action="requestaccess.php"  method="POST">
         <fieldset class="offset-md-1 field">
             <legend class="leg">Request Access</legend>
             <div class="form-group">
-                <label for="first_name">First Name:</label>
-                <input type="text" class="form-control" id="first_name" name="firstname" placeholder="Enter First Name">
+                <label for="usernameid">Username:</label>
+                <input type="text" class="form-control" id="usernameid" name="username" placeholder="Username">
                 <p id="firstNameFeedback"></p>
             </div>
             <div class="form-group">
-                <label for="last_name">Last Name:</label>
-                <input type="text" class="form-control" id="last_name" name="lastname" placeholder="Enter Last Name">
+                <label for="passwordid">Last Name:</label>
+                <input type="password" class="form-control" id="passwordid" name="password" placeholder="Password">
                 <p id="lastNameFeedback"></p>
             </div>
-            <div class="form-group">
-                    <label for="email_address">Email:</label>
-                    <input type="email" class="form-control" id="email_address" name="email" placeholder="Enter Email">
-                    <p id="emailFeedback"></p>
-            </div>
-            <div class="form-group">
-                    <label for="website_input">Website:</label>
-                    <input type="text" class="form-control" id="website_input" name="website" placeholder="Enter Website URL">
-                    <p id="websiteFeedback"></p>
-            </div>
-            <div class="form-group">
-                    <label for="birth">Birth date:</label>
-                    <input type="date" class="form-control" id="birth" name="birthdate">
-            </div>
-            <div class="form-group">
-                <label class="radio-inline radio" for="faculty"><input type="radio" class="" id="faculty" name="fac_or_student">Faculty</label>
-                <label class="radio-inline radio" for="student"><input type="radio" class="" id="student" name="fac_or_student"> Student</label>
-                
-            </div>
-            <div class="form-group">
-            <div class="checkbox">
-                <p> I currently: </p>
-                <label><input type="checkbox" name="involvement[]" value="none"> Have no involvement in the Project</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="involvement[]" value="instructor"> An instructor in this project</label>
-            </div>
-            <div class="checkbox">
-                    <label><input type="checkbox" name="involvement[]" value="instructor_another">An instructor in a different project</label>
-                </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="involvement[]" value="student"> A student in this project</label>
-            </div>
-            <div class="checkbox">
-                    <label><input type="checkbox" name="involvement[]" value="student_other"> A student in a different project</label>
-            </div>            
-            <div class="checkbox">
-                <label><input type="checkbox" name="involvement[]" value="admin"> A college administator</label>
-            </div>            
-            <div class="checkbox">
-                <label><input type="checkbox" name="involvement[]" value="external"> An external reviewer</label>
-            </div> 
-            
-            <div class="form-group">
-                <label for="text">Additional Thoughts</label>
-                <textarea class="form-control" id="message" rows="4" form="request"></textarea>
-                <p id="charactersLeft"></p>
-                <p id="lastkey"></p>
-            </div>
+
             <div class="form-group">
                 <button id="submit" type="submit" class="btn btn-primary">Submit</button>
             </div>
 
         </fieldset>
     </form>
-
+        </div>
 
 
     
-                            <!-- Bootstrap core JavaScript
+                    <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+            $(function(){
+              $("#nav-placeholder").load("nav.php");
+            });
+        </script>
     
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
@@ -105,6 +72,6 @@
     <script src="js/register.js"></script>
 
     <footer>Copywrite &copy William Davidson</footer>
-
+    </div>
 </body>
 </html>
