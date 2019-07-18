@@ -4,6 +4,18 @@ body {
     color: #fff;
     padding-top: 60px;
 }
+.bg {
+    /* The image used */
+    background-image: url("../images/Background.png") !important;
+  
+    /* Full height */
+    height: 1920px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
 #drop {
     color: white;
     transition: 0.4s;
@@ -42,6 +54,7 @@ body {
     transition: 0.4s;
     transition-timing-function: ease-out;
 }
+
 #nav-button:hover {
     background-color: #fff;
     color: #333;
@@ -84,4 +97,7 @@ body {
 .rememberme {
     position: relative;
     left: 15px;
+}
+.logbookentry {
+    font-size: 16px;
 }
