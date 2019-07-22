@@ -1,6 +1,5 @@
 <?php
 
-    require "nav.html";
-    require "Plan.html"
+    require "Plan.html";
 
 ?>

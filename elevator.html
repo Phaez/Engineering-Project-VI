@@ -1,18 +1,61 @@
 <!DOCTYPE HTML>
 <head>
 
+
+    <link href="css/jumbotron.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
     <link href="css/style42.css" rel="stylesheet">
+    <link href="css/elevator.css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="bg">
+    <div id="nav-placeholder"></div>
+    <div class="container-fluid">
+        <div class="floor">
+            <button id="fThree" type='button' class="btn btn-primary elevatorbtn">Floor 3</button>
+        </div>
+        <div class="floor">
+            <button id="fTwo" type='button' class="btn btn-primary elevatorbtn">Floor 2</button>
+        </div>
+        <div class="floor">
+            <button id="fOne" type='button' class="btn btn-primary elevatorbtn">Floor 1</button>
+        </div>
+        <div class="floor">
+            <h>Current Floor:</h>
+            <h id="floornum"></h>
+        </div>
 
 
-    <form action="elevator.php" method="POST">
-        <input type='text' name='reqfloor'>
-        <button type='submit'>Request Floor</button>
-
-    </form>
 
 
+
+
+
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/showFloor.js"></script>
+    <script src="js/setFloor.js"></script>
+
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("nav.php", function(){
+                $("#elevator").addClass("active");
+            });
+        });
+    </script>
+
+    </div>
 
 </body>

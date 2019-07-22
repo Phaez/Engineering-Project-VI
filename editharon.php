@@ -20,7 +20,7 @@
         'date' => $date,
         'log' => $log
     ];
-
+    
     $result = $statement->execute($params);
     var_dump($result);
     header("Location: HaronLogbook.php");

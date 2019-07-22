@@ -1,0 +1,33 @@
+body {
+
+}
+.mainelevator {
+    padding-top: 100px;
+    padding-left: 1%;
+}
+
+.floor {
+    padding-top: 10px;
+}
+
+.elevatorbtn {
+    background-color: gray;
+    border-color: #333;
+    height:84px;
+    width: 84px;
+    border-radius: 44px;
+}
+
+.btn:hover {
+    background-color: dimgray;
+    border-color: #333;
+}
+.elevatorbtn:focus {
+    outline-color: lightgray !important;
+}
+
+.elevatorbtn:active {
+    border-color: #333 !important;
+    background-color: rgb(53, 53, 53) !important;
+    box-shadow: none !important;
+}
