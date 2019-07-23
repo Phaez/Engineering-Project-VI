@@ -6,6 +6,7 @@
     <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
     <link href="css/style42.css" rel="stylesheet">
     <link href="css/elevator.css" rel="stylesheet">
+    <link href="css/Chart.css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,7 +31,11 @@
             <div class="floor">
                 <h>Current Floor:</h>
                 <h id="floornum"></h>
-            </div>';
+            </div>
+            <div id="canvas-holder style=" width:200 height:200">
+                <canvas id="mychart" ></canvas>
+            </div>'            
+            ;
                 $database = new PDO(
                     'mysql:host=127.0.0.1; dbname=elevator',
                     'William',
@@ -60,10 +65,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.com/libraries/Chart.js"></script>
 
     <script src="js/showFloor.js"></script>
     <script src="js/setFloor.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/utils.js"></script>
 
+
+
+    <script src="js/graph.js"></script>
+    
     <script>
         $(function(){
             $("#nav-placeholder").load("nav.php", function(){
