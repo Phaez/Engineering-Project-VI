@@ -8,31 +8,20 @@ $database = new PDO('mysql:host=127.0.0.1;dbname=elevator',
 
     $database->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
-    $rows = $database->query('SELECT * FROM ChangeLog ORDER BY nodeID');
-
-    $one = 0;
-    $two = 0;
-    $three = 0;
-
+    $rows = $database->query('SELECT currentFloor, COUNT(*) AS hits FROM ChangeLog GROUP BY currentFloor');
+    $floorarr = [];
     foreach($rows as $row)
     {
-        if ($row['currentFloor'] == 1) {
-            $one++;
-        }
-        elseif ($row['currentFloor'] == 2) {
-            $two++;
-        }
-        else{
-            $three++;
-        }
+        array_push($floorarr, $row['hits']);
     }
+
     $arr = array(
-        'one' => $one,
-        'two' => $two,
-        'three' => $three
+        'one' => $floorarr[0],
+        'two' => $floorarr[1],
+        'three' => $floorarr[2]
     );
-    $varia = [];
-    array_push($varia, $one, $two, $three);
+
+    
     $floor = json_encode($arr);
     echo $floor; 
 ?>

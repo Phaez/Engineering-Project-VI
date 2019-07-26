@@ -19,27 +19,36 @@
 
 
             if (isset($_SESSION['username'])) {
-                echo '<div class="floor">
-                <button id="fThree" type="button" class="btn btn-primary elevatorbtn">Floor 3</button>
-            </div>
-            <div class="floor">
-                <button id="fTwo" type="button" class="btn btn-primary elevatorbtn">Floor 2</button>
-            </div>
-            <div class="floor">
-                <button id="fOne" type="button" class="btn btn-primary elevatorbtn">Floor 1</button>
-            </div>
-            <div class="floor">
-                <h>Current Floor:</h>
-                <h id="floornum"></h>
-            </div>
-            <div id="canvas-holder style=" width:200 height:200">
-                <canvas id="mychart" ></canvas>
-            </div>'            
+                echo '
+                <div class="row">
+                    <div class="col-1">
+                    <div class="floor">
+                        <button id="fThree" type="button" class="btn btn-primary elevatorbtn">Floor 3</button>
+                    </div>
+
+                    <div class="floor">
+                        <button id="fTwo" type="button" class="btn btn-primary elevatorbtn">Floor 2</button>
+                    </div>
+                    <div class="floor">
+                        <button id="fOne" type="button" class="btn btn-primary elevatorbtn">Floor 1</button>
+                    </div>
+                    <div class="floor">
+                        <h>Current Floor:</h>
+                        <h id="floornum"></h>
+                    </div>
+                    </div>
+                    <div id="chart-container" class="col-3">
+                        <canvas id="mychart" class="piechart"></canvas>
+                    </div>      
+                </div>
+                '
+
             ;
+                require_once 'config.php';
                 $database = new PDO(
-                    'mysql:host=127.0.0.1; dbname=elevator',
-                    'William',
-                    'mysql'
+                    'mysql:host=127.0.0.1; dbname='.DB_NAME,
+                    DB_USERNAME,
+                    DB_PASSWORD
                 );
 
                 $database->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
@@ -54,6 +63,10 @@
                 }
                 echo '</ul>';
             }
+            else {
+                echo '<h1>You must be logged in to access the Elevator Controls</h1>';
+            }
+
         ?>
     </div>
     <script

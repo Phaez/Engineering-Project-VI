@@ -53,8 +53,9 @@
                         <?php 
                             session_start();
                             if (isset($_SESSION['username'])){
+                                $username = htmlspecialchars($_SESSION['username'], ENT_QUOTES);
                                 echo '<li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle dropper" data-toggle="dropdown">Hello ' . $_SESSION['username'] . '</a>
+                                    <a class="nav-link dropdown-toggle dropper" data-toggle="dropdown">'. $username.' </a>
                                     <div class="dropdown-menu dropdown-menu-right " aria-labelledby="drop">
                                         <a class="dropdown-item" id="drop-item" href="logout.php">Logout</a>
                                         </div>

@@ -30,6 +30,10 @@
                 </p>
                 <figcaption>C++ Developer and Elevator Debugger</figcaption>
             </figure>
+            <?php
+                session_start();
+                if (isset($_SESSION['username'])) 
+                echo '
             <div>
                 <form action="edittudor.php" method="POST">
             
@@ -38,12 +42,14 @@
                     <button type="submit">Submit</button>
             
                 </form>
-            </div>
+            </div>';
+            ?>
             <?php
+                require_once 'config.php';
                 $database = new PDO(
-                    'mysql:host=127.0.0.1; dbname=elevator',
-                    'William',
-                    'mysql'
+                    'mysql:host=127.0.0.1; dbname='.DB_NAME,
+                    DB_USERNAME,
+                    DB_PASSWORD
                 );
 
                 $database->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
@@ -55,9 +61,10 @@
 
                 foreach ($rows as $row)
                 {
-
-                    echo '<li class="logbookentry">' . $row['log'] . '</li>';
-                    echo '<p class=logdate>' . $row['date'] . '</p>';
+                    $logbookentry = htmlspecialchars($row['log'], ENT_QUOTES);
+                    echo '<li class="logbookentry">' . $logbookentry . '</li>';
+                    $logbookentry = htmlspecialchars($row['date'], ENT_QUOTES);
+                    echo '<p class=logdate>' . $logbookentry . '</p>';
                 }
 
                 echo '</ul>';

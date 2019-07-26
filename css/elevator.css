@@ -31,3 +31,14 @@ body {
     background-color: rgb(53, 53, 53) !important;
     box-shadow: none !important;
 }
+
+.piechart {
+    width: 100px;
+    height: 100px;
+}
+
+#chart-container {
+    height:40vh;
+    width:40vw;
+    color: white;
+}
